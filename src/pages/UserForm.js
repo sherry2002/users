@@ -79,6 +79,13 @@ const UserForm = ({userListVersion,setUserListVersion}) => {
         setError("phone");
         return false
     }
+    if(localStorage.getItem("userList")){
+      let emailValid = JSON.parse(localStorage.getItem("userList")).find((users)=> users.email === formData.email);
+      if(emailValid && emailValid !== undefined){
+        toast.error("User Email Already Exist");
+        return false;
+      }
+    }
     try {
         let data = localStorage.getItem("userList") ? JSON.parse(localStorage.getItem("userList")) : []
         let id = data && data?.length > 0 ? data[data.length-1]?.id + 1 : formData.id;
