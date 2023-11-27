@@ -1,0 +1,61 @@
+.user_form{
+    margin-top: 15px;
+}
+.user_form > input {
+ padding: 12px !important;
+}
+.options{
+    margin: 5px !important;
+    padding: 0 5px !important;
+}
+
+.input_icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Emblem-question-red.svg/2048px-Emblem-question-red.svg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 28px;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+.form_label{
+    margin-right: 14px;
+}
+.form-switch > label{
+ margin-top: 4px;
+}
+.pageNotFound{
+    height: 100%;
+}
+.user_table .sr-only{
+    display: none;
+}
+
+.user_table .datatable-select > label{
+    display: flex;
+  }
+
+  .user_table .dataTables_length > label{
+    display: flex;
+  }
+  
+  .user_table .table {
+      margin: 15px 0;
+  }
+  
+  .user_table .table>:not(caption)>*>*{
+      padding: 0.75rem 0.7rem;
+  }
+  
+  .user_table .pagination{
+      width: 100%;
+      display: flex ;
+      align-items: center;
+      justify-content: end ;
+  }
+.user_table .dataTables_scroll{
+  margin-bottom: 15px;
+ }
+ .dataTables_scrollHead{
+    overflow: auto !important;
+ }
